@@ -1,0 +1,16 @@
+:root {
+	--container-width: 1220px;
+	--container-padding: 20px;
+
+	--font-main: 'Source Sans 3', sans-serif;
+	--font-accent: 'Playfair Display', serif;
+
+	--page-bg: #fff;
+	--text-color: #000;
+	--accent: #ac182c;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}

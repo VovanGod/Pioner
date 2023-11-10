@@ -1,0 +1,12 @@
+.company {
+    &-img {
+        display: block;
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 556px) {
+    .company {
+        display: none;
+    }
+}

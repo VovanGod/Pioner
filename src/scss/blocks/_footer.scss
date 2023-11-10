@@ -1,0 +1,120 @@
+.footer {
+    background-color: #333;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        &-txt {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 60px;
+            justify-content: center;
+            column-gap: 90px;
+        }
+    }
+
+    &-down {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 72px;
+    }
+
+    &-menu ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+
+        li a {
+            display: inline-block;
+            color: #F5F5F5;
+            font-size: 16px;
+            font-weight: 400;
+
+            &:after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #f5F5f5;
+                opacity: 0;
+                transition: opacity 0.2s ease-in;
+            }
+
+            &:hover:after {
+                opacity: 1;
+            }
+        }
+    }
+    &-files ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+
+        li a, button {
+            display: inline-block;
+            color: #F5F5F5;
+            font-size: 16px;
+            font-weight: 400;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                color: #ffffffbd;
+            }
+        }
+    }
+}
+
+@media (max-width: 672px) {
+    .footer {
+        padding-top: 46px;
+        &-wrapper {
+            flex-direction: column;
+            row-gap: 50px;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding-top: 40px;
+        &-wrapper {
+            &-txt {
+                column-gap: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .footer {
+        &-wrapper {
+            &-txt {
+                column-gap: 30px;
+            }
+        }
+    }
+}
+
+.content-file {
+    padding: 20px;
+    width: auto !important;
+    height: auto !important;
+    .files-wrapper {
+        display: flex;
+        column-gap: 40px;
+        align-items: center;
+        .files-card {
+            width: 60px;
+
+            p {
+                font-size: 16px;
+                margin-top: 5px;
+                font-weight: 500;
+            }
+        }
+    }
+}
